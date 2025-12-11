@@ -6,6 +6,8 @@
         <meta name="viewsport" content="width=device-width, initial-scale=1.0">
         <title>CSC102 Home Page</title>
         <link rel="stylesheet" href="main.css">
+
+        <script src="code.js"></script>
     </head>
     <body>
      <header>
@@ -16,8 +18,22 @@
             <a href="boards.html">Boards</a>
         </nav>
      </header>
+        <div>
+            <button id="btnStart" onclick="startMove();">Start Move</button>
+            <button id="btnStop" onclick="stopMove();" disabled="true">Stop Move</button>
+        </div>
         <p>
-            <img id="memeImage" src="ChainsawMan.jpg">
+            <img src="ChainsawMan.jpg" width="200" id="memeImage" class="myImgClass">
         </p>
+        
+    <footer>
+        Zane Rangel
+        <br>
+        University of Advancing Technology
+        <br>
+        2627 W. Baseline Rd.
+        <br>
+        Tempe, AZ 85283
+    </footer>
     </body>
  </html>
