@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Example</title>
+
+    <link rel="stylesheet" href="main.css">
+    <script src="code.js"></script>
+</head>
+<body>
+    
+    <header>
+        <h1>Input Example</h1>
+    </header>
+
+    <main>
+        <div id="divMessage"></div>
+
+        <form method="post" action="#" name="frmInput" id="frmInput" onsubmit="return false;">
+
+            <label for="txtFirstName">First Name:</label>
+            <input type="text" name="txtFirstName" id="txtFirstName" placeholder="ex, Zane">
+
+            <label for="txtLastName">Last Name:</label>
+            <input type="text" name="txtLastName" id="txtLastName" placeholder="ex, Rangel">
+            <br>   
+            <label for="txtZipCode">Zip Code:</label>
+            <input type="text" name="txtZipCode" id="txtZipCode" placeholder="85122">
+            <br>
+            <button onclick="validateForm();">Save Inputs</button>
+        </form>
+        
+    </main>
+</body>
+</html>
