@@ -29,9 +29,7 @@ function updateText(){
                 let fullName = "";
 
                 let firstName = document.getElementById("txtFirstName").value.trim();
-
                 let lastName = document.getElementById("txtLastName").value.trim();
-
                 let zipCode = document.getElementById("txtZipCode").value.trim();
 
                 console.log("firstName=" + firstName);
@@ -57,6 +55,7 @@ function updateText(){
 
                 document.getElementById("divMessage").textContent = message;
             }
+            
             function testPalin(){
 
             let userInput = document.getElementById("txtInput").value.trim();
@@ -86,3 +85,4 @@ function updateText(){
 
             return cleanedWord == reversedWord;
         }
+
