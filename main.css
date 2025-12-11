@@ -1,37 +1,36 @@
-/*
-decleration block::
-
-selector {
-    property: value;
-    property2: value;
-}
-*/
-
 body{
-    background-color: rgb(215, 145, 14);
-    color: whitesmoke;
-
+    background-color:rgb(216, 120, 9);
+    color: rgb(253, 253, 253);
 }
 
 nav{
-    height: 600px;
-    width: 200px;
-    float: left;
     padding: 5px;
     line-height: 30px;
 }
 
 footer{
+    position: fixed;
+    bottom: 0;
     text-align: center;
-    margin-right: 200px;
+}
+
+header{
+    text-align: center;
+}
+
+img{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    left: 45%;
+    top:45%;
+}
+
+.myImgClass{
+    width: 150px;
 }
 
 #memeImage{
-    margin-right: 200px;
-    width: 400px;
+    width: 150px;
 }
 
-h1{
-    text-align: center;
-
-}
