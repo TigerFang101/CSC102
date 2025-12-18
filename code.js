@@ -1,4 +1,3 @@
-
 function updateText(){
     document.getElementById("heading").innerHTML="JavaScript is Awesome!";
 }
@@ -85,4 +84,6 @@ function updateText(){
 
             return cleanedWord == reversedWord;
         }
-
+        function playSound(){
+            document.getElementById("clickSound").play();
+        }
