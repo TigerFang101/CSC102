@@ -1,0 +1,12 @@
+body {
+    background-color: #ff0000;
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+#run {
+    width: 150px;
+    margin-top: 20px;
+    transition: margin-left 0.5s;
+}
