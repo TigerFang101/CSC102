@@ -19,9 +19,12 @@
         </nav>
      </header>
         <div>
-            <button id="btnStart" onclick="startMove();">Start Move</button>
+            <button id="btnStart" onclick="startMove(); playSound();">Start Move</button>
             <button id="btnStop" onclick="stopMove();" disabled="true">Stop Move</button>
         </div>
+        <audio id="clickSound">
+    <source src="sound.mp3" type="audio/mpeg">
+    </audio>
         <p>
             <img src="ChainsawMan.jpg" width="200" id="memeImage" class="myImgClass">
         </p>
