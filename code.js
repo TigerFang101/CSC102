@@ -1,6 +1,39 @@
-function updateText(){
-    document.getElementById("heading").innerHTML="JavaScript is Awesome!";
-}
+ function playCraps(){
+            console.log("playCraps() function was called");
+            
+            let roll1 = rollDice();
+            let roll2 = rollDice();
+
+            let sum = roll1 + roll2;
+
+            document.getElementById("divRoll1").textContent = "Roll 1: " + roll1;
+            document.getElementById("divRoll2").textContent = "Roll 2: " + roll2;
+            document.getElementById("divSum").textContent = "Sum: " + sum;
+
+            let result = "";
+
+            if (sum == 7 || sum == 11){
+                result = "😥 Sorry! You LOST!";
+            }
+
+            else if(roll1 % 2 == 0 && roll1 + roll2){
+                result = "🎉 Yay! You WON!!!🎉";
+            }
+            else{
+                result = "😏 You Pushed! 😁 Wanna Try Again!?";
+            }
+
+            document.getElementById("divResult").textContent = result;
+
+        }
+
+        function rollDice() {
+
+            let die = Math.random() * 6;
+
+            return Math.ceil(die);
+        }
+
    let intervalID = 0;
             function startMove(){
                 let image = document.getElementById("memeImage");
@@ -87,3 +120,4 @@ function updateText(){
         function playSound(){
             document.getElementById("clickSound").play();
         }
+     
