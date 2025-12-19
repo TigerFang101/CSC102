@@ -1,34 +1,51 @@
 <!-- Zane Rangel, 9/21/2025 -->
- <!DOCTYPE html>
- <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewsport" content="width=device-width, initial-scale=1.0">
-        <title>CSC102 Home Page</title>
-        <link rel="stylesheet" href="main.css">
-
-        <script src="code.js"></script>
-    </head>
-    <body>
-     <header>
+<!-- CSC102 Home Page -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Sets character encoding for the page -->
+    <meta charset="UTF-8">
+    <!-- Controls how the page scales on different screen sizes -->
+    <meta name="viewsport" content="width=device-width, initial-scale=1.0">
+    <!-- Title shown in the browser tab -->
+    <title>CSC102 Home Page</title>
+    <!-- Links the external CSS file for styling -->
+    <link rel="stylesheet" href="main.css">
+    <!-- Links the external JavaScript file -->
+    <script src="code.js"></script>
+</head>
+<body>
+    <!-- Page header section -->
+    <header>
+        <!-- Main heading -->
         <h1>Welcome to my CSC102 Home Page</h1>
+        <!-- Navigation links -->
         <nav>
+            <!-- Link to home page -->
             <a href="index.html">Home</a>
             <br>
+            <!-- Link to boards page -->
             <a href="boards.html">Boards</a>
         </nav>
-     </header>
-        <div>
-            <button id="btnStart" onclick="startMove(); playSound();">Start Move</button>
-            <button id="btnStop" onclick="stopMove();" disabled="true">Stop Move</button>
-        </div>
-        <audio id="clickSound">
-    <source src="sound.mp3" type="audio/mpeg">
+    </header>
+    <!-- Button controls section -->
+    <div>
+        <!-- Start button triggers movement and sound -->
+        <button id="btnStart" onclick="startMove(); playSound();">Start Move</button>
+        <!-- Stop button stops movement (disabled by default) -->
+        <button id="btnStop" onclick="stopMove();" disabled="true">Stop Move</button>
+    </div>
+    <!-- Audio element for sound effects -->
+    <audio id="clickSound">
+        <!-- Audio file source -->
+        <source src="sound.mp3" type="audio/mpeg">
     </audio>
-        <p>
-            <img src="ChainsawMan.jpg" width="200" id="memeImage" class="myImgClass">
-        </p>
-        
+    <!-- Image display section -->
+    <p>
+        <!-- Image with ID and class for styling and JavaScript control -->
+        <img src="ChainsawMan.jpg" width="200" id="memeImage" class="myImgClass">
+    </p>
+    <!-- Footer section with contact/school information -->
     <footer>
         Zane Rangel
         <br>
@@ -38,5 +55,5 @@
         <br>
         Tempe, AZ 85283
     </footer>
-    </body>
- </html>
+</body>
+</html>
