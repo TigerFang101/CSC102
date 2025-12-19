@@ -84,6 +84,8 @@ function updateText(){
 
             return cleanedWord == reversedWord;
         }
-        function playSound(){
-            document.getElementById("clickSound").play();
-        }
+// Plays the click sound when the function is called
+function playSound() {
+    // Find the audio element with the ID "clickSound" and play it
+    document.getElementById("clickSound").play();
+}
